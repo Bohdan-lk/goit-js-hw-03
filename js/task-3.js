@@ -2,14 +2,16 @@ const findBestEmployee = function(employees) {
     let bestProd = 0;
     let name;
 
-    for (const employees in employees) {
-        if (employees.)
+    for (const key in employees) {
+        if (bestProd < employees[key]) {
+            bestProd = employees[key];
+            name=key;
+        }
     }
+    return name;
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
+
 console.log(
     findBestEmployee({
         ann: 29,
