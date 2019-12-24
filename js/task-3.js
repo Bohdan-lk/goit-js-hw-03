@@ -1,3 +1,5 @@
+'use strict';
+
 const findBestEmployee = function(employees) {
     let bestProd = 0;
     let name;
